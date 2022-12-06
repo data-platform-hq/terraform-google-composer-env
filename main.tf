@@ -12,7 +12,7 @@ resource "google_composer_environment" "main" {
     node_config {
       network         = var.network
       subnetwork      = var.subnet
-      service_account = var.sa-email
+      service_account = var.sa_email
     }
     private_environment_config {
       enable_private_endpoint = var.enable_private_endpoint

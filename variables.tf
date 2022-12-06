@@ -23,7 +23,7 @@ variable "subnet" {
   type        = string
 }
 
-variable "sa-email" {
+variable "sa_email" {
   description = "The Google Cloud Platform Service Account to be used by the node VMs."
   type        = string
 }
