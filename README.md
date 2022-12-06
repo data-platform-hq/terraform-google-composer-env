@@ -40,13 +40,14 @@ No modules.
 | <a name="input_image_version"></a> [image\_version](#input\_image\_version)                                 | The version of the software running in the environment                                                                                   | `string` | "composer-2.0.22-airflow-2.2.5" |    no    |
 | <a name="input_environment_size"></a> [environment\_size](#input\_environment\_size)                        | The environment size controls the performance parameters of the managed Cloud Composer infrastructure that includes the Airflow database | `string` | "ENVIRONMENT_SIZE_SMALL"        |    no    |
 | <a name="input_enable_private_endpoint"></a> [enable\_private\_endpoint](#input\_enable\_private\_endpoint) | If true, access to the public endpoint of the GKE cluster is denied                                                                      | `bool`   | true                            |    no    |
+| <a name="input_labels"></a> [labels](#input\_labels)                                                        | The labels associated with this dataset. You can use these to organize and group your datasets                                           | `bool`   | true                            |    no    |
 
 ## Outputs
 
-| Name                                                                    | Description                                                        |
-| ----------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| <a name="output_airflow_url"></a> [airflow\_url](#output\_airflow\_url) | The URI of the Apache Airflow Web UI hosted within the environment |
-| <a name="output_dags_bucket"></a> [dags\_bucket](#output\_dags\_bucket) | The Cloud Storage prefix of the DAGs for the environment           |
+| Name                                                                    | Description                                                         |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| <a name="output_airflow_url"></a> [airflow\_url](#output\_airflow\_url) | The URI of the Apache Airflow Web UI hosted within the environment. |
+| <a name="output_dags_bucket"></a> [dags\_bucket](#output\_dags\_bucket) | The Cloud Storage prefix of the DAGs for the environment.           |
 <!-- END_TF_DOCS -->
 
 ## License

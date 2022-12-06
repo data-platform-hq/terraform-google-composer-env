@@ -19,9 +19,5 @@ resource "google_composer_environment" "main" {
     }
   }
 
-  labels = {
-    "iacda-gcp-pbn" = var.product_base_name
-    "iacda-gcp-env" = var.env
-    "iacda-gcp-res" = "composer"
-  }
+  labels = var.labels
 }
