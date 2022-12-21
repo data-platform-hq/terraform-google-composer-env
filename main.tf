@@ -1,4 +1,3 @@
-
 resource "google_composer_environment" "main" {
   name = "${var.env}-${var.product_base_name}-composer"
   config {
