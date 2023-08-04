@@ -3,7 +3,9 @@ locals {
 }
 
 resource "google_composer_environment" "this" {
-  name = "${var.product_base_name}-${var.env}${local.suffix}-test-composer"
+  name    = "${var.product_base_name}-${var.env}${local.suffix}-test-composer"
+  region  = var.region
+  project = var.project
   config {
     dynamic "node_config" {
       for_each = var.node_config != null ? [var.node_config] : []
