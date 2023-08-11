@@ -86,7 +86,7 @@ Cannot be updated
 }
 
 variable "maintenance_window" {
-  description = "value"
+  description = "The configuration settings for Cloud Composer maintenance windows"
   type = object({
     start_time = string
     end_time   = string
@@ -96,7 +96,7 @@ variable "maintenance_window" {
 }
 
 variable "recovery_config" {
-  description = "value"
+  description = "The configuration settings for recovery"
   type = object({
     enabled                    = optional(bool)
     snapshot_location          = optional(string)
@@ -107,7 +107,7 @@ variable "recovery_config" {
 }
 
 variable "scheduler" {
-  description = "value"
+  description = "Configuration for resources used by Airflow schedulers"
   type = object({
     cpu        = optional(number)
     memory_gb  = optional(number)
@@ -118,7 +118,7 @@ variable "scheduler" {
 }
 
 variable "web_server" {
-  description = "value"
+  description = "Configuration for resources used by Airflow web server"
   type = object({
     cpu        = optional(number)
     memory_gb  = optional(number)
