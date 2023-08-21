@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/data-platform-hq/terraform-google-composer-env/compare/v1.0.0...v1.1.0) (2023-08-21)
+
+
+### Features
+
+* updated module ([2bd8fa8](https://github.com/data-platform-hq/terraform-google-composer-env/commit/2bd8fa864e0c739d616d34d9e01bef6ff42035e5))
+
 # 1.0.0 (2023-01-20)
 
 
